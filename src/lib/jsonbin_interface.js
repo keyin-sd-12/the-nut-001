@@ -1,6 +1,6 @@
 // functions to interface with JSONbin.io
 const X_ACCESS_API_KEY =
-  "$2a$10$lCF9Tkt8IirfyGjM5MYuEegORbNt2IzoKOQltKgMH8nCSrFpQVAM6";
+  "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 const BASE_URL = "https://api.jsonbin.io/v3/b";
 
 const ACCOUNTS_BIN_ID = "6755b89aad19ca34f8d7ad78";
