@@ -1,0 +1,146 @@
+.fade {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.fade.out {
+  opacity: 0;
+}
+
+.home_section {
+  background-color: var(--clr_foreground);
+  padding: var(--default_internal_padding);
+  border-radius: var(--default_border_radius);
+}
+
+.home_section p {
+  margin-bottom: 10px;
+}
+
+.home_section h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr_nav);
+  margin-bottom: 15px;
+  /* padding: 5px; */
+  text-align: center;
+}
+
+.main_home_section_part2 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main_home_section_part2 img {
+  overflow: hidden;
+  display: block;
+  float: right;
+  /* width: 50%; */
+  width: calc(60% - 7vw);
+  /* min-width: 400px; */
+  height: auto;
+  margin-left: 20px;
+  border-radius: var(--default_border_radius);
+}
+
+.home_section_title_1,
+.home_section_title_1_small {
+  display: none;
+}
+
+@media screen and (max-width: 899px) {
+  .home_section_title_2 {
+    display: none;
+  }
+  .home_section_title_1 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .home_section_title_1_small {
+    display: block;
+  }
+  .home_section_title_1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .home_section {
+    padding: 10px;
+  }
+
+  .main_home_section_part2 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .home_section h1 {
+    font-size: 1.2rem;
+    font-family: var(--font_roboto_condensed);
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .home_section h1 {
+    font-size: 1rem;
+  }
+  .home_section {
+    font-family: var(--font_roboto_condensed);
+  }
+}
+
+.review_container {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: var(--default_border_radius);
+  /* text-align: center;  */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: lavender;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.reviews_title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.review_body p {
+  margin-bottom: 10px;
+  line-height: 1.2;
+  font-family: var(--font_roboto_serif);
+  font-size: 1.1rem;
+}
+
+.review_author,
+.review_author_hometown {
+  font-style: italic;
+  font-size: 1rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 699px) {
+  .review_container {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  .review_body p,
+  .review_author,
+  .review_author_hometown {
+    font-size: 0.9rem;
+  }
+}
